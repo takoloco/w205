@@ -1,0 +1,8 @@
+  318  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  319  head -10 assessment-attempts-20180128-121051-nested.json 
+  320  mv -i assessment-attempts-20180128-121051-nested.json ../w205-7
+  321  docker-compose up -d
+  322  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  323  docker-compose down
+  324  history
+  325  history > takoloco-history.txt
