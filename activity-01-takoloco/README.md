@@ -22,9 +22,9 @@ https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD
 - Read ads (between 5&10)
 - What are companies looking for in skills, experience, competencies?
   * Answer:
-
-
-
+      Skills: Python, Scala, SQL, Hadoop, Spark, 
+      Experience: 3-5 years
+      Competencies: ETL, analytics, big data, data pipelines, distributed systems
 
 3. Submit a PR for this assignment.
 - You changed this `README.md` in part 2;

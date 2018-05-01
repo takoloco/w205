@@ -83,7 +83,7 @@ Create a file called game_api.py and save the file to the file system after edit
 ##### Start up the web server #####
 
 ```bash
-docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+docker-compose exec mids env FLASK_APP=/w205//game_api.py flask run
 ```
 
 ```
@@ -91,7 +91,7 @@ docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask 
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Start up a Flask web server process with the Python file /w205/flask-with-kafka/game_api.py
+Start up a Flask web server process with the Python file /w205/activity-09-takoloco/game_api.py
 
 ##### Access the web server via the curl command #####
 
@@ -139,6 +139,14 @@ Make a HTTP GET request against the localhost on the port 5000 at the location "
 
 The web server process is stopped.
 
+##### Copy the python script before revising it #####
+
+```bash
+cp -p game_api.py game_api_simple.py
+```
+
+A copy of the python script game_api.py called game_api_simple.py is created
+
 ##### Revise the python script to add publishing to the Kafka topic #####
 
 ```bash
@@ -150,7 +158,7 @@ Revise the file game_api.py and save the file to the file system after editing
 ##### Start up the web server again #####
 
 ```bash
-docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+docker-compose exec mids env FLASK_APP=/w205/activity-09-takoloco/game_api.py flask run
 ```
 
 ```
@@ -158,7 +166,7 @@ docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask 
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Start up a Flask web server process with the Python file /w205/flask-with-kafka/game_api.py
+Start up a Flask web server process with the Python file /w205/activity-09-takoloco/game_api.py
 
 ##### Access the web server via the curl command #####
 
